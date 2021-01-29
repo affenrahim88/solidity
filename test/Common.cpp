@@ -103,6 +103,8 @@ CommonOptions::CommonOptions(std::string _caption):
 		("no-smt", po::bool_switch(&disableSMT), "disable SMT checker")
 		("optimize", po::bool_switch(&optimize), "enables optimization")
 		("enforce-via-yul", po::bool_switch(&enforceViaYul), "Enforce compiling all tests via yul to see if additional tests can be activated.")
+		("enforce-gas-test", po::bool_switch(&enforceGasTest), "Enforce running gas tests on every test and adding expectations.")
+		("enforce-gas-test-min-value", po::value(&enforceGasTestMinValue), "Threshold value when enforcing gas tests.")
 		("abiencoderv1", po::bool_switch(&useABIEncoderV1), "enables abi encoder v1")
 		("show-messages", po::bool_switch(&showMessages), "enables message output")
 		("show-metadata", po::bool_switch(&showMetadata), "enables metadata output");

@@ -76,6 +76,8 @@ bool IsolTestOptions::parse(int _argc, char const* const* _argv)
 		return false;
 	}
 	enforceViaYul = true;
+	enforceGasTest = true;
+	enforceGasTestMinValue = 100000;
 
 	return res;
 }
