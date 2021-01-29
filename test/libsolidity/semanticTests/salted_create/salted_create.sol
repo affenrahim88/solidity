@@ -17,8 +17,15 @@ contract A {
     }
 }
 // ====
-// compileViaYul: also
 // EVMVersion: >=constantinople
+// compileViaYul: also
 // ----
 // different_salt() -> true
+// gas ir: 107186
+// gas legacy: 125934
+// gas legacyOptimized: 125869
 // same_salt() -> true
+// gas ir: 98439503
+// gas legacy: 98439401
+// gas legacyOptimized: 98439300
+// gas irOptimized: 98439083

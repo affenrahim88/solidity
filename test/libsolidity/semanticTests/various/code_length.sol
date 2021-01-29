@@ -61,4 +61,6 @@ contract C {
 // compileViaYul: also
 // ----
 // constructor()
+// gas legacy: 140175
+// gas ir: 218286
 // f(): true, true -> true, true
