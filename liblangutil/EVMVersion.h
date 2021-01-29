@@ -51,6 +51,7 @@ public:
 	static EVMVersion petersburg() { return {Version::Petersburg}; }
 	static EVMVersion istanbul() { return {Version::Istanbul}; }
 	static EVMVersion berlin() { return {Version::Berlin}; }
+	static EVMVersion latest() { return {Version::Berlin}; }
 
 	static std::optional<EVMVersion> fromString(std::string const& _version)
 	{
